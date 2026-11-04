@@ -1,0 +1,4 @@
+{{ define "main" }}
+<header class="page-heading"><p class="eyebrow">Follow a thread</p><h1>{{ .Title }}</h1><p class="page-description">A small index of the things I write about.</p></header>
+<ul class="taxonomy-list">{{ range .Data.Terms.Alphabetical }}<li><a href="{{ .Page.RelPermalink }}"><span>#{{ .Page.LinkTitle }}</span><span class="term-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }} <span aria-hidden="true">↗</span></span></a></li>{{ end }}</ul>
+{{ end }}

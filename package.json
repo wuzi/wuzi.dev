@@ -1,0 +1,13 @@
+{
+  "name": "wuzi-codes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wuzi's personal writing and project archive",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "python3 tests/check_site.py && python3 tests/check_editorial.py && node --test tests/browser-behavior.test.mjs",
+    "check": "npm run build && npm test",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist"
+  }
+}

@@ -1,0 +1,5 @@
+{{ define "main" }}
+<header class="page-heading"><a class="back-link" href="/{{ .Data.Plural }}/">← All {{ .Data.Plural }}</a><h1>#{{ .Title }}</h1><p class="page-description">{{ len .RegularPages }} {{ if eq (len .RegularPages) 1 }}post{{ else }}posts{{ end }} filed here.</p></header>
+{{ $pager := .Paginate .RegularPages.ByDate.Reverse }}
+<ol class="post-list">{{ range .RegularPages.ByDate.Reverse }}{{ partial "post-row.html" (dict "page" . "summary" true) }}{{ end }}</ol>
+{{ end }}

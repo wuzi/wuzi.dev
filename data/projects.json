@@ -1,0 +1,89 @@
+{
+  "list": [
+    {
+      "name":"WireGUI",
+      "url":"https://github.com/Devsfy/wiregui",
+      "desc":"A cross-platform graphical user interface for wireguard (2021)"
+    },
+    {
+      "name":"FXTrainer",
+      "url":"https://github.com/Wuzi/FXTrainer",
+      "desc":"A multi-purpose cheat tool for Grand Theft Auto V and fiveM (2015)"
+    },
+    {
+      "name":"language-pawn",
+      "url":"https://github.com/Wuzi/language-pawn",
+      "desc":"Syntax highlighting and snippets to pawn files in atom (2015)"
+    },
+    {
+      "name":"labirong",
+      "url":"https://github.com/Wuzi/labirong",
+      "desc":"A multiplayer labyrinth racing game (2017)"
+    },
+    {
+      "name":"labironGO",
+      "url":"https://github.com/Wuzi/labirongo",
+      "desc":"A version of labirong written in Go (2019)"
+    },
+    {
+      "name":"labirong3D",
+      "url":"https://github.com/Wuzi/labirong3d-client",
+      "desc":"A remake of labirong in 3D (2020)"
+    },
+    {
+      "name":"brawlio",
+      "url":"https://github.com/Wuzi/brawlio",
+      "desc":"A platform multiplayer PvP game (2018)"
+    },
+    {
+      "name":"vending",
+      "url":"https://github.com/Wuzi/vending",
+      "desc":"Server-side vending machines for SA-MP (2014)"
+    },
+    {
+      "name":"radars",
+      "url":"https://github.com/Wuzi/radars",
+      "desc":"SA-MP lib to make speed traps (2014)"
+    },
+    {
+      "name":"streamersb",
+      "url":"https://github.com/Wuzi/streamersb",
+      "desc":"A soundboard made for streamers (2018)"
+    },
+    {
+      "name":"houndbot",
+      "url":"https://github.com/Wuzi/houndbot",
+      "desc":"A text-based pokemon-like game for discord (2019)"
+    },
+    {
+      "name":"pgroups",
+      "url":"https://github.com/Wuzi/pgroups",
+      "desc":"A SA-MP library for creating and managing player groups (2014)"
+    },
+    {
+      "name":"samp-missions",
+      "url":"https://github.com/Wuzi/samp-missions",
+      "desc":"GTA:SA story missions for SA-MP (2015)"
+    },
+    {
+      "name":"uno-to-uno-rs485",
+      "url":"https://github.com/Wuzi/uno-to-uno-rs485",
+      "desc":"Communication between two arduinos using RS485 module (2019)"
+    },
+    {
+      "name":"ragemp-boilerplate",
+      "url":"https://github.com/Wuzi/ragemp-boilerplate",
+      "desc":"Multi-language RAGEMP Boilerplate (2019)"
+    },
+    {
+      "name":"dynamicgz",
+      "url":"https://github.com/Wuzi/dynamicgz",
+      "desc":"A SA-MP lib made to extend and simplify the creation of gzs (2014)"
+    },
+    {
+      "name":"freeroam",
+      "url":"https://github.com/Wuzi/freeroam-samp",
+      "desc":"A multi-mode freeroam for SA-MP (2016)"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-heading">
+    <a href="/posts/" class="back-link">← All writing</a>
+    <h1>{{ .Title }}</h1>
+    <div class="article-meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Jan 02, 2006" }}</time><span aria-hidden="true">·</span><span>{{ .ReadingTime }} min read</span>{{ range .GetTerms "tags" }}<a href="{{ .RelPermalink }}">#{{ .Data.Term }}</a>{{ end }}</div>
+  </header>
+  <div class="post-content">{{ .Content }}</div>
+  <div class="article-end"><span aria-hidden="true">∎</span><p>Filed under {{ range $index, $term := .GetTerms "categories" }}{{ if $index }}, {{ end }}<a href="{{ $term.RelPermalink }}">{{ $term.Data.Term }}</a>{{ end }}.</p></div>
+  <nav class="post-navigation" aria-label="More writing">
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><span class="eyebrow">Newer writing</span><span>{{ .Title }} ↗</span></a>{{ end }}
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><span class="eyebrow">Earlier writing</span><span>{{ .Title }} ↗</span></a>{{ end }}
+  </nav>
+</article>
+{{ end }}

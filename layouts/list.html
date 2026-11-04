@@ -1,0 +1,17 @@
+{{ define "main" }}
+<header class="page-heading">
+  <p class="eyebrow">{{ if eq .Section "projects" }}The things I've made{{ else }}Notes from the workbench{{ end }}</p>
+  <h1>{{ if eq .Section "posts" }}Writings{{ else }}{{ .Title }}{{ end }}</h1>
+  {{ if .Content }}<div class="page-description">{{ .Content }}</div>{{ else }}<p class="page-description">Code, games, and the experiments along the way.</p>{{ end }}
+</header>
+{{ if eq .Section "projects" }}
+  <ol class="project-list">
+    {{ range hugo.Data.projects.list }}<li><h2><a href="{{ .url }}">{{ .name }} <span aria-hidden="true">↗</span></a></h2><p>{{ .desc }}</p></li>{{ end }}
+  </ol>
+{{ else }}
+  {{ $pager := .Paginate .RegularPages.ByDate.Reverse }}
+  {{ range .RegularPages.ByDate.Reverse.GroupByDate "2006" }}
+  <section class="archive-year" aria-labelledby="year-{{ .Key }}"><h2 id="year-{{ .Key }}" class="year-label">{{ .Key }}</h2><ol class="post-list">{{ range .Pages }}{{ partial "post-row.html" (dict "page" . "summary" false) }}{{ end }}</ol></section>
+  {{ end }}
+{{ end }}
+{{ end }}

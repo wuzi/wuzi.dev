@@ -1,0 +1,8 @@
+<li class="post-row">
+  <time class="post-date" datetime="{{ .page.Date.Format "2006-01-02" }}">{{ .page.Date.Format "Jan 02, 2006" }}</time>
+  <div class="post-row-body">
+    <h3><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></h3>
+    {{ if .summary }}<p class="post-excerpt">{{ .page.Plain | htmlUnescape | strings.TrimSpace | truncate 160 }}</p>{{ end }}
+    <div class="post-row-meta"><span>{{ .page.ReadingTime }} min read</span>{{ range .page.GetTerms "tags" }}<a href="{{ .RelPermalink }}">#{{ .Data.Term }}</a>{{ end }}</div>
+  </div>
+</li>

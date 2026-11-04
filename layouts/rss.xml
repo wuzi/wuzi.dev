@@ -1,0 +1,17 @@
+{{- $pages := .Pages -}}
+{{- if .IsHome -}}{{- $pages = where .Site.RegularPages "Section" "posts" -}}{{- end -}}
+{{- if eq .Kind "section" -}}{{- $pages = .RegularPages -}}{{- end -}}
+{{- if eq .Kind "term" -}}{{- $pages = .RegularPages -}}{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ if .IsHome }}Wuzi Codes{{ else }}{{ .Title }} on Wuzi Codes{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ if .IsHome }}Notes on code, games, and things I build.{{ else }}{{ .Title }} from Wuzi Codes.{{ end }}</description>
+    <language>en-us</language>
+    {{ with .OutputFormats.Get "RSS" }}<atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml"/>{{ end }}
+    {{ range $pages.ByDate.Reverse }}
+    <item><title>{{ .Title | htmlUnescape | htmlEscape | safeHTML }}</title><link>{{ .Permalink }}</link><guid>{{ .Permalink }}</guid><pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate><description>{{ .Summary | plainify | htmlUnescape | htmlEscape | safeHTML }}</description></item>
+    {{ end }}
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  {{ $description := .Description | default .Summary | default .Site.Params.description | plainify | htmlUnescape | strings.TrimSpace | truncate 180 }}
+  <meta name="description" content="{{ $description }}">
+  <meta name="author" content="Wuzi">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Title | default .Site.Title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="Wuzi Codes">
+  <meta property="og:type" content="{{ if and .IsPage (eq .Section "posts") }}article{{ else }}website{{ end }}">
+  <meta property="og:image" content="https://wuzi.dev/images/logo.png">
+  <meta property="og:image:alt" content="Wuzi Codes illustration">
+  <meta name="twitter:card" content="summary">
+  {{ if and .IsPage (eq .Section "posts") }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="preload" href="/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="alternate" type="application/rss+xml" title="Wuzi Codes" href="/index.xml">
+  {{ $theme := resources.Get "js/theme.js" | minify | fingerprint }}
+  <script src="{{ $theme.RelPermalink }}" integrity="{{ $theme.Data.Integrity }}"></script>
+  {{ $css := resources.Get "css/site.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ $js := resources.Get "js/site.js" | minify | fingerprint }}
+  <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  {{ $analytics := resources.Get "js/analytics.js" | minify | fingerprint }}
+  <script defer src="{{ $analytics.RelPermalink }}" integrity="{{ $analytics.Data.Integrity }}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="identity-row">
+        <a class="identity" href="/" aria-label="Wuzi Codes home">
+          <img src="/images/logo.png" width="48" height="48" alt="" class="avatar">
+          <span>Wuzi<span class="identity-accent"> Codes</span></span>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" type="button" hidden><span aria-hidden="true">◐</span> <span id="theme-label">auto</span></button>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="/" {{ if .IsHome }}aria-current="page"{{ end }}>Home</a>
+        <a href="/posts/" {{ if eq .Section "posts" }}aria-current="{{ if .IsPage }}true{{ else }}page{{ end }}"{{ end }}>Writings</a>
+        <a href="/projects/" {{ if eq .Section "projects" }}aria-current="page"{{ end }}>Projects</a>
+        <a href="/tags/" {{ if eq .Section "tags" }}aria-current="true"{{ end }}>Tags</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}</main>
+    <footer class="site-footer">
+      <p class="footer-name">© {{ now.Year }} Wuzi</p>
+      <nav aria-label="Contact and feeds">
+        <a href="https://github.com/wuzi">GitHub</a>
+        <a href="https://www.linkedin.com/in/lcsdegodoy/">LinkedIn</a>
+        <a href="mailto:lcsdegodoy@gmail.com">Email</a>
+        <a href="/index.xml">RSS <span aria-hidden="true">↗</span></a>
+      </nav>
+    </footer>
+  </div>
+  <span id="copy-status" class="sr-only" role="status" aria-live="polite"></span>
+</body>
+</html>

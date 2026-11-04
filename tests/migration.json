@@ -1,0 +1,243 @@
+{
+  "source": {
+    "repo": "wuzi/blog",
+    "commit": "a19bf18aa7670e5090926f1c128b4a1008645fb0"
+  },
+  "posts": [
+    {
+      "source_path": "content/posts/history-of-labirong.md",
+      "route": "/posts/history-of-labirong/",
+      "title": "History of Labirong",
+      "date": "2022-05-03T17:06:00Z",
+      "sha256": "35326f10892e2c327dedd89d29b42f5b8b0138be52332d045300404824e56a29",
+      "images": [
+        "/images/history-of-labirong/maze-version-0.png",
+        "/images/history-of-labirong/maze-version-1.png",
+        "/images/history-of-labirong/maze-version-2.png",
+        "/images/history-of-labirong/maze-version-3.png",
+        "/images/history-of-labirong/maze-version-4.png",
+        "/images/history-of-labirong/labirongo.png",
+        "/images/history-of-labirong/labirong3d.png"
+      ],
+      "tags": [
+        "game"
+      ],
+      "categories": [
+        "game",
+        "development"
+      ]
+    },
+    {
+      "source_path": "content/posts/creating-a-2D-game-including-all-the-assets-part-1.md",
+      "route": "/posts/creating-a-2d-game-including-all-the-assets-part-1/",
+      "title": "Creating a 2D game including all the assets (part 1)",
+      "date": "2021-07-11T23:30:00Z",
+      "sha256": "7df17b87181acbe377e830641787d343fe4b0d8ae679a96134a280853f4fbf60",
+      "images": [
+        "/images/woltileset.jpg",
+        "/images/character.jpg",
+        "/images/charactersheet.gif",
+        "/images/final.gif"
+      ],
+      "tags": [
+        "game",
+        "art"
+      ],
+      "categories": [
+        "game",
+        "development"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "/fonts/JetBrainsMono-Bold.woff2",
+      "sha256": "65f91d76a41f0fc0aba1757fe3118c5eda56c660ef24fd47c8cc120a23847da1",
+      "bytes": 46384
+    },
+    {
+      "path": "/fonts/JetBrainsMono-Regular.woff2",
+      "sha256": "cb0882127079e5efeb5699b57a0e4f26699ce770592fae63186b52faf237d802",
+      "bytes": 44688
+    },
+    {
+      "path": "/fonts/LICENSE-JetBrainsMono.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "/images/LICENSE-Cactus.txt",
+      "sha256": "853355b423493e7689663baba6e7e817022b97b44f6c1f91f7dd93dfd4367791",
+      "bytes": 1065
+    },
+    {
+      "path": "/images/character.jpg",
+      "sha256": "185b6755d155892d77bf4515d7adb91b20f5bb89f1b34698dff35ff71d708ab5",
+      "bytes": 27428
+    },
+    {
+      "path": "/images/charactersheet.gif",
+      "sha256": "24bcbb736e75e2484984b9ffc10b5e554041578aafc72a717683e2e74a201857",
+      "bytes": 89515
+    },
+    {
+      "path": "/images/favicon.ico",
+      "sha256": "24d1aa0359a5f5a88c1afe9d43b1248c926db1075d835dc7fc6df68dd297e985",
+      "bytes": 154998
+    },
+    {
+      "path": "/images/final.gif",
+      "sha256": "340964d3efb51831026dce3d5dcc7dfbab96723e21ed0afa26b2625caffa091c",
+      "bytes": 519753
+    },
+    {
+      "path": "/images/history-of-labirong/labirong3d.png",
+      "sha256": "209a49e4e9fff358bdc073a7275cc9ffab0810b42f7e088eec08ad18c0258f01",
+      "bytes": 1032137
+    },
+    {
+      "path": "/images/history-of-labirong/labirongo.png",
+      "sha256": "10d06f43ba8627df3eb02daad9f74de38846e50abb413ce5111a65417da9323e",
+      "bytes": 4348
+    },
+    {
+      "path": "/images/history-of-labirong/maze-version-0.png",
+      "sha256": "ef85cebe4810c130876e4ca37e3be1b1be6f0e8132ff35e30d0f0f3dbfdca5f1",
+      "bytes": 17097
+    },
+    {
+      "path": "/images/history-of-labirong/maze-version-1.png",
+      "sha256": "022e4a14df9fae74cfe6a674344913b30aaba2cf7c6ed166cf3b6f34d42cd6fb",
+      "bytes": 17261
+    },
+    {
+      "path": "/images/history-of-labirong/maze-version-2.png",
+      "sha256": "ff978a63dae5cd6de43dfcc1411a8160ade8a3433b846d80b557e8ed6188a486",
+      "bytes": 40854
+    },
+    {
+      "path": "/images/history-of-labirong/maze-version-3.png",
+      "sha256": "63139f9d92ae859b270e0e52aeb08a0bb96a3202715a9ee0cb554bbbf27e955d",
+      "bytes": 317699
+    },
+    {
+      "path": "/images/history-of-labirong/maze-version-4.png",
+      "sha256": "6c9412a01621a16724bb9d8f1a722bf1a41959f48c90eb07333424c3c88d1746",
+      "bytes": 322423
+    },
+    {
+      "path": "/images/logo.png",
+      "sha256": "b1d5b7c66ddee54d2ef210e6841126dca6060a74958fd2b57b74689cfcdbc0a0",
+      "bytes": 355672
+    },
+    {
+      "path": "/images/woltileset.jpg",
+      "sha256": "fe2f8a78a395c7a84d815be9ea404b0da3f15c60c80e1f20084c68458b7c1a70",
+      "bytes": 40650
+    }
+  ],
+  "projects": {
+    "sha256": "3d13bfeb6d798eaf05d3bbb27569de536eb42719420f182795f55caa7f842499",
+    "count": 17
+  },
+  "feeds": [
+    {
+      "route": "/index.xml",
+      "kind": "posts",
+      "items": [
+        "https://wuzi.dev/posts/history-of-labirong/",
+        "https://wuzi.dev/posts/creating-a-2d-game-including-all-the-assets-part-1/"
+      ]
+    },
+    {
+      "route": "/posts/index.xml",
+      "kind": "posts",
+      "items": [
+        "https://wuzi.dev/posts/history-of-labirong/",
+        "https://wuzi.dev/posts/creating-a-2d-game-including-all-the-assets-part-1/"
+      ]
+    },
+    {
+      "route": "/tags/index.xml",
+      "kind": "terms",
+      "items": [
+        "https://wuzi.dev/tags/game/",
+        "https://wuzi.dev/tags/art/"
+      ]
+    },
+    {
+      "route": "/categories/index.xml",
+      "kind": "terms",
+      "items": [
+        "https://wuzi.dev/categories/development/",
+        "https://wuzi.dev/categories/game/"
+      ]
+    },
+    {
+      "route": "/tags/art/index.xml",
+      "kind": "posts",
+      "items": [
+        "https://wuzi.dev/posts/creating-a-2d-game-including-all-the-assets-part-1/"
+      ]
+    },
+    {
+      "route": "/tags/game/index.xml",
+      "kind": "posts",
+      "items": [
+        "https://wuzi.dev/posts/history-of-labirong/",
+        "https://wuzi.dev/posts/creating-a-2d-game-including-all-the-assets-part-1/"
+      ]
+    },
+    {
+      "route": "/categories/game/index.xml",
+      "kind": "posts",
+      "items": [
+        "https://wuzi.dev/posts/history-of-labirong/",
+        "https://wuzi.dev/posts/creating-a-2d-game-including-all-the-assets-part-1/"
+      ]
+    },
+    {
+      "route": "/categories/development/index.xml",
+      "kind": "posts",
+      "items": [
+        "https://wuzi.dev/posts/history-of-labirong/",
+        "https://wuzi.dev/posts/creating-a-2d-game-including-all-the-assets-part-1/"
+      ]
+    }
+  ],
+  "aliases": [
+    {
+      "route": "/page/1/",
+      "target": "/"
+    },
+    {
+      "route": "/posts/page/1/",
+      "target": "/posts/"
+    },
+    {
+      "route": "/tags/game/page/1/",
+      "target": "/tags/game/"
+    },
+    {
+      "route": "/tags/art/page/1/",
+      "target": "/tags/art/"
+    },
+    {
+      "route": "/categories/game/page/1/",
+      "target": "/categories/game/"
+    },
+    {
+      "route": "/categories/development/page/1/",
+      "target": "/categories/development/"
+    }
+  ],
+  "retired": [
+    "/posts/test/",
+    "/tags/test/",
+    "/tags/test/index.xml",
+    "/tags/test/page/1/",
+    "/categories/test/",
+    "/categories/test/index.xml",
+    "/categories/test/page/1/"
+  ]
+}

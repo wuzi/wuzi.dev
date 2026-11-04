@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="intro" aria-label="Introduction">
+  <p class="eyebrow">A personal corner of the internet</p>
+  <h1>I'm Wuzi.<br>I write about <span class="accent">code, games,</span><br class="desktop-break"> and things I build.</h1>
+</section>
+<section class="latest" aria-labelledby="latest-heading">
+  <div class="section-heading"><h2 id="latest-heading">Latest writing</h2><a class="small-link" href="/posts/">All posts <span aria-hidden="true">↗</span></a></div>
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ $pager := .Paginate $posts.ByDate.Reverse }}
+  <ol class="post-list">
+    {{ range first 5 $posts.ByDate.Reverse }}{{ partial "post-row.html" (dict "page" . "summary" true) }}{{ end }}
+  </ol>
+</section>
+<aside class="project-note"><span aria-hidden="true">↳</span><p>Games, tools, and experiments.<br><a href="/projects/">Browse the project archive</a></p></aside>
+{{ end }}

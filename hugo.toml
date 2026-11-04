@@ -1,0 +1,46 @@
+baseURL = 'https://wuzi.dev/'
+locale = 'en-US'
+title = 'Wuzi Codes'
+timeZone = 'UTC'
+enableRobotsTXT = true
+disableHugoGeneratorInject = true
+summaryLength = 35
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  description = "I'm Wuzi. I write about code, games, and things I build."
+  author = 'Wuzi'
+
+[pagination]
+  pagerSize = 50
+  path = 'page'
+
+[permalinks]
+  posts = '/posts/:contentbasename/'
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+  taxonomy = ['HTML', 'RSS']
+  term = ['HTML', 'RSS']
+  page = ['HTML']
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[markup.highlight]
+  codeFences = true
+  noClasses = false
+  lineNos = false
+  guessSyntax = false
+  tabWidth = 4
+
+[sitemap]
+  changeFreq = ''
+  priority = -1
