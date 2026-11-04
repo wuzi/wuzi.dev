@@ -343,27 +343,28 @@ h3 {
   padding:23px 0;
   border-bottom:1px solid var(--line)
 }
-.project-list h2 {
+.project-list h3 {
   font-size:15px
 }
-.project-list h2 a {
+.project-list h3 a {
   color:var(--ink);
   text-decoration:none
 }
-.project-list h2 a:hover {
+.project-list h3 a:hover {
   color:var(--accent);
   text-decoration:underline
 }
-.project-list h2 span {
+.project-list h3 span {
   font-size:12px;
   color:var(--accent);
   margin-left:3px
 }
 .project-list p {
   margin-top:8px;
-  font-size:12px;
+  font-size:13px;
   color:var(--muted)
 }
+.project-section+.project-section { margin-top:48px }
 .taxonomy-list {
   list-style:none;
   margin:0;

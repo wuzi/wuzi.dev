@@ -4,4 +4,4 @@ description: A collection of games, tools, and experiments from over the years.
 outputs:
   - HTML
 ---
-A collection of games, tools, and experiments from over the years. Some are finished, some were just for fun. This is the archive.
+Terminal apps, desktop tools, multiplayer games, and experiments from over the years. A few highlights first, followed by the rest of the archive.

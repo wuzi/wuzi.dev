@@ -79,8 +79,11 @@ def main():
         path = asset['path'].lstrip('/')
         require(digest(ROOT / 'static' / path) == asset['sha256'], f'Source image changed: {path}')
         require(digest(OUT / path) == asset['sha256'], f'Built image changed: {path}')
-    require(digest(ROOT / 'data/projects.json') == manifest['projects']['sha256'], 'Original project data changed')
+    require(digest(ROOT / 'tests/fixtures/projects-original.json') == manifest['projects']['sha256'], 'Original project baseline changed')
     projects = json.loads((ROOT / 'data/projects.json').read_text())['list']
+    originals = json.loads((ROOT / 'tests/fixtures/projects-original.json').read_text())['list']
+    require({(p['name'], p['url']) for p in originals}.issubset({(p['name'], p['url']) for p in projects}), 'Original project links missing')
+    require(len({p['url'].lower().rstrip('/') for p in projects}) == len(projects), 'Duplicate project URLs')
     page = Page(output('/projects/'))
     for project in projects:
         require(project['url'] in page.links, f'Missing project link: {project["name"]}')

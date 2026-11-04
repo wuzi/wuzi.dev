@@ -1,89 +1,142 @@
 {
   "list": [
     {
-      "name":"WireGUI",
-      "url":"https://github.com/Devsfy/wiregui",
-      "desc":"A cross-platform graphical user interface for wireguard (2021)"
+      "name": "whatsatui",
+      "url": "https://github.com/wuzi/whatsatui",
+      "desc": "WhatsApp in the terminal, with keyboard-driven panes for chats, messages and composing. It supports fuzzy chat search, local history and drafts, inline images and stickers, plus audio and video playback.",
+      "featured": true
     },
     {
-      "name":"FXTrainer",
-      "url":"https://github.com/Wuzi/FXTrainer",
-      "desc":"A multi-purpose cheat tool for Grand Theft Auto V and fiveM (2015)"
+      "name": "Cue",
+      "url": "https://github.com/wuzi/cue",
+      "desc": "A GNOME scratchpad that turns a line like “Call Ada @tomorrow 9am” into a desktop reminder. Notes stay in a local SQLite database, and reminders can be completed or snoozed directly from their notifications.",
+      "featured": true
     },
     {
-      "name":"language-pawn",
-      "url":"https://github.com/Wuzi/language-pawn",
-      "desc":"Syntax highlighting and snippets to pawn files in atom (2015)"
+      "name": "Paradise City RPG (SA-MP)",
+      "url": "https://github.com/Paradise-Devs/pc-rpg-gamemode",
+      "desc": "A city-life RPG for GTA: San Andreas Multiplayer, with jobs, player-owned homes and businesses, factions and vehicle systems. The Pawn gamemode ties those systems together with persistent player and world data in MySQL.",
+      "featured": true
     },
     {
-      "name":"labirong",
-      "url":"https://github.com/Wuzi/labirong",
-      "desc":"A multiplayer labyrinth racing game (2017)"
+      "name": "poe-idle",
+      "url": "https://github.com/wuzi/poe-idle",
+      "desc": "An idle RPG prototype in Rust and Bevy, where your character automatically moves through maps and fights enemy packs. Its progression systems explore loot, equipment, crafting and talents, with player progress saved locally.",
+      "featured": false
     },
     {
-      "name":"labironGO",
-      "url":"https://github.com/Wuzi/labirongo",
-      "desc":"A version of labirong written in Go (2019)"
+      "name": "HuaweiOLTSDK",
+      "url": "https://github.com/wuzi/HuaweiOLTSDK",
+      "desc": "A Go SDK for working with Huawei fiber-network equipment through its command-line interface. It handles command prompts and turns ONT discovery, optical readings and service-port output into structured Go data.",
+      "featured": false
     },
     {
-      "name":"labirong3D",
-      "url":"https://github.com/Wuzi/labirong3d-client",
-      "desc":"A remake of labirong in 3D (2020)"
+      "name": "asaas",
+      "url": "https://github.com/wuzi/asaas",
+      "desc": "A typed Rust SDK for Asaas payments, covering customers, charges, Pix QR codes and installment payment books. It also exposes payment and refund details for reconciliation, preserving monetary response values without floating-point conversion.",
+      "featured": false
     },
     {
-      "name":"brawlio",
-      "url":"https://github.com/Wuzi/brawlio",
-      "desc":"A platform multiplayer PvP game (2018)"
+      "name": "WireGUI",
+      "url": "https://github.com/Devsfy/wiregui",
+      "desc": "A desktop control panel for WireGuard that lets you switch tunnels, browse saved configurations and see when each was last connected. Built with Electron, React and TypeScript; no longer actively maintained.",
+      "featured": true
     },
     {
-      "name":"vending",
-      "url":"https://github.com/Wuzi/vending",
-      "desc":"Server-side vending machines for SA-MP (2014)"
+      "name": "FXTrainer",
+      "url": "https://github.com/Wuzi/FXTrainer",
+      "desc": "A historical GTA V and FiveM trainer with an in-game menu for vehicle boosts, free movement and player settings. Written in C++ as a Script Hook V ASI plugin.",
+      "featured": false
     },
     {
-      "name":"radars",
-      "url":"https://github.com/Wuzi/radars",
-      "desc":"SA-MP lib to make speed traps (2014)"
+      "name": "language-pawn",
+      "url": "https://github.com/Wuzi/language-pawn",
+      "desc": "A historical Atom package for writing SA-MP scripts, with Pawn syntax highlighting and snippets for common libraries and plugins. Adapted from Atom's C grammar, it covers tools such as Streamer, sscanf and FCNPC.",
+      "featured": false
     },
     {
-      "name":"streamersb",
-      "url":"https://github.com/Wuzi/streamersb",
-      "desc":"A soundboard made for streamers (2018)"
+      "name": "labirong",
+      "url": "https://github.com/Wuzi/labirong",
+      "desc": "Race other players through a randomly generated maze in the browser, then tackle a new layout when someone finds the exit. The JavaScript game uses a Node.js server and Socket.IO to synchronize players and rounds.",
+      "featured": false
     },
     {
-      "name":"houndbot",
-      "url":"https://github.com/Wuzi/houndbot",
-      "desc":"A text-based pokemon-like game for discord (2019)"
+      "name": "labironGO",
+      "url": "https://github.com/Wuzi/labirongo",
+      "desc": "Escape a procedurally generated maze without leaving the terminal. This Go remake of Labirong draws the game with ANSI colors and handles keyboard input in a goroutine.",
+      "featured": false
     },
     {
-      "name":"pgroups",
-      "url":"https://github.com/Wuzi/pgroups",
-      "desc":"A SA-MP library for creating and managing player groups (2014)"
+      "name": "labirong3D",
+      "url": "https://github.com/Wuzi/labirong3d-client",
+      "desc": "A browser-based multiplayer maze race, rebuilt in 3D with animated characters and in-game chat. A TypeScript and Babylon.js client synchronizes the shared world over WebSockets.",
+      "featured": true
     },
     {
-      "name":"samp-missions",
-      "url":"https://github.com/Wuzi/samp-missions",
-      "desc":"GTA:SA story missions for SA-MP (2015)"
+      "name": "brawlio",
+      "url": "https://github.com/Wuzi/brawlio",
+      "desc": "A browser arena where players jump across platforms and trade fireballs in real time. Phaser handles the 2D world and physics, while a Node.js and Socket.IO server relays movement and attacks.",
+      "featured": false
     },
     {
-      "name":"uno-to-uno-rs485",
-      "url":"https://github.com/Wuzi/uno-to-uno-rs485",
-      "desc":"Communication between two arduinos using RS485 module (2019)"
+      "name": "vending",
+      "url": "https://github.com/Wuzi/vending",
+      "desc": "Add interactive vending machines anywhere on a SA-MP server, with callbacks that let the gamemode decide prices, rewards and access. An in-game editor lets you place, customize and export machines.",
+      "featured": false
     },
     {
-      "name":"ragemp-boilerplate",
-      "url":"https://github.com/Wuzi/ragemp-boilerplate",
-      "desc":"Multi-language RAGEMP Boilerplate (2019)"
+      "name": "radars",
+      "url": "https://github.com/Wuzi/radars",
+      "desc": "Build speed traps for SA-MP with configurable speed limits and detection radii. The Pawn library reports the player, radar and measured speed through a callback, so the gamemode can issue fines or trigger other events.",
+      "featured": false
     },
     {
-      "name":"dynamicgz",
-      "url":"https://github.com/Wuzi/dynamicgz",
-      "desc":"A SA-MP lib made to extend and simplify the creation of gzs (2014)"
+      "name": "streamersb",
+      "url": "https://github.com/Wuzi/streamersb",
+      "desc": "A desktop soundboard for streamers: import local audio clips, assign global hotkeys and trigger sounds while another app has focus. Built with Electron and Vue, with sound lists and key bindings saved locally; the repository is archived.",
+      "featured": false
     },
     {
-      "name":"freeroam",
-      "url":"https://github.com/Wuzi/freeroam-samp",
-      "desc":"A multi-mode freeroam for SA-MP (2016)"
+      "name": "houndbot",
+      "url": "https://github.com/Wuzi/houndbot",
+      "desc": "A text-based Discord game built around League of Legends champions, with turn-based challenges between players. Abilities consume mana and use cooldowns, while Sequelize stores champions, experience and player progress.",
+      "featured": false
+    },
+    {
+      "name": "pgroups",
+      "url": "https://github.com/Wuzi/pgroups",
+      "desc": "Organize SA-MP players into named groups such as gangs, police factions or staff teams. The Pawn library supports membership checks and messages targeted to one group or an entire group type.",
+      "featured": false
+    },
+    {
+      "name": "samp-missions",
+      "url": "https://github.com/Wuzi/samp-missions",
+      "desc": "A Pawn prototype that recreates parts of GTA: San Andreas story mode inside SA-MP, with scripted cutscenes and subtitles. Its modular mission scripts include Home Invasion, alongside MySQL-backed player accounts.",
+      "featured": false
+    },
+    {
+      "name": "uno-to-uno-rs485",
+      "url": "https://github.com/Wuzi/uno-to-uno-rs485",
+      "desc": "Mirror digital inputs from one Arduino board to another over an RS485 link. Paired transmitter and receiver sketches encode nine pin states as serial commands and apply them to the remote board's outputs.",
+      "featured": false
+    },
+    {
+      "name": "ragemp-boilerplate",
+      "url": "https://github.com/Wuzi/ragemp-boilerplate",
+      "desc": "A RAGE MP starter project with separate TypeScript modules for the GTA V multiplayer client and server. Includes MongoDB models through Mongoose, i18next localization and a React scaffold for embedded UI.",
+      "featured": false
+    },
+    {
+      "name": "dynamicgz",
+      "url": "https://github.com/Wuzi/dynamicgz",
+      "desc": "Turn SA-MP gang zones into gameplay triggers, with callbacks for players entering or leaving an area. The Pawn library wraps zone creation and includes an in-game tool for setting zone boundaries, choosing colors and exporting definitions.",
+      "featured": false
+    },
+    {
+      "name": "freeroam",
+      "url": "https://github.com/Wuzi/freeroam-samp",
+      "desc": "A SA-MP gamemode that brings freeroam, racing, demolition derby and deathmatch together on one server. Includes dynamic race and map creation, a clothing and attachments shop, administration commands and MySQL-backed player data.",
+      "featured": false
     }
   ]
 }

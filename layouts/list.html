@@ -5,9 +5,15 @@
   {{ if .Content }}<div class="page-description">{{ .Content }}</div>{{ else }}<p class="page-description">Code, games, and the experiments along the way.</p>{{ end }}
 </header>
 {{ if eq .Section "projects" }}
-  <ol class="project-list">
-    {{ range hugo.Data.projects.list }}<li><h2><a href="{{ .url }}">{{ .name }} <span aria-hidden="true">↗</span></a></h2><p>{{ .desc }}</p></li>{{ end }}
-  </ol>
+  {{ range slice true false }}
+  {{ $featured := . }}
+  <section class="project-section">
+    <h2 class="year-label">{{ if $featured }}Selected projects{{ else }}More projects{{ end }}</h2>
+    <ol class="project-list">
+      {{ range hugo.Data.projects.list }}{{ if eq (default false .featured) $featured }}<li><h3><a href="{{ .url }}">{{ .name }} <span aria-hidden="true">↗</span></a></h3><p>{{ .desc }}</p></li>{{ end }}{{ end }}
+    </ol>
+  </section>
+  {{ end }}
 {{ else }}
   {{ $pager := .Paginate .RegularPages.ByDate.Reverse }}
   {{ range .RegularPages.ByDate.Reverse.GroupByDate "2006" }}
