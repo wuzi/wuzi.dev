@@ -25,25 +25,25 @@
 }
 :root[data-theme=dark] {
   color-scheme:dark;
-  --bg:#171e1b;
+  --bg:#121212;
   --ink:#e3eae5;
   --muted:#a2afa6;
   --accent:#73d5ac;
-  --line:#35423a;
-  --soft:#222d26;
-  --code:#202b24;
+  --line:#363636;
+  --soft:#1e1e1e;
+  --code:#1b1b1b;
   --focus:#9ceac5
 }
 @media(prefers-color-scheme:dark) {
   :root:not([data-theme=light]):not([data-theme=dark]) {
     color-scheme:dark;
-    --bg:#171e1b;
+    --bg:#121212;
     --ink:#e3eae5;
     --muted:#a2afa6;
     --accent:#73d5ac;
-    --line:#35423a;
-    --soft:#222d26;
-    --code:#202b24;
+    --line:#363636;
+    --soft:#1e1e1e;
+    --code:#1b1b1b;
     --focus:#9ceac5
   }
 }
