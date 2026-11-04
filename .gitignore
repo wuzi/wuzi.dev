@@ -1,0 +1,11 @@
+dist/
+.tools/
+.hugo_build.lock
+resources/
+node_modules/
+.superpowers/
+.drafts/
+.env*
+!.env.example
+*.log
+.DS_Store
